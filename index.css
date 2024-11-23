@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --font-size: 15px;
+    --font-family: "Poppins";
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    box-sizing: border-box;
+    background-color: var(--very-light-gray);
+    color: var(--grayish-blue);
+    font-weight: 400;
+}
+
+h1, h2 {
+    color: var(--very-dark-blue);
+}
+
+#heading1 {
+    font-weight: 200;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+header {
+    text-align: center;
+    margin: 3em;
+}
+
+main {
+    display: grid;
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.5em;
+    box-shadow: 0 1em 2em -1em var(--grayish-blue);
+    padding: 2em 2em 0em 2em;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 1em 2em -1em var(--very-dark-blue);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card img {
+    margin-bottom: 1em;
+    width: 4em;
+    height: auto;
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+
+.card:nth-child(1) {
+    border-top: 0.3em solid var(--cyan);
+}
+
+.card:nth-child(2) {
+    border-top: 0.3em solid var(--red);
+}
+
+.card:nth-child(3) {
+    border-top: 0.3em solid var(--orange);
+}
+
+.card:nth-child(4) {
+    border-top: 0.3em solid var(--blue);
+}
+
+@media (min-width: 28em) {
+    main {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 5% 35% 5% 35% 5%;
+    }
+
+    .card {
+        width: 22em;
+    }
+
+    .card:nth-child(1) {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    align-self: center;
+}
+
+ .card:nth-child(2) {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    align-self: end;
+}
+.card:nth-child(3) {
+    grid-column-start: 3;
+    grid-row-start: 4;
+    align-self: start;
+}
+.card:nth-child(4) {
+    grid-column-start: 4;
+    grid-row-start: 3;
+    align-self: center;
+}
+}
