@@ -12,17 +12,30 @@
     --font-family: "Poppins";
 }
 
-body {
-    font-family: var(--font-family);
-    font-size: var(--font-size);
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background-color: var(--very-light-gray);
     color: var(--grayish-blue);
-    font-weight: 400;
 }
 
 h1, h2 {
     color: var(--very-dark-blue);
+}
+
+p {
+    font-size: var(--font-size);
+    font-weight: 400;
 }
 
 #heading1 {
@@ -35,7 +48,10 @@ h1 {
 
 header {
     text-align: center;
-    margin: 3em;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s);
 }
 
 main {
