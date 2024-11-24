@@ -110,8 +110,8 @@ I still need to practice the positioning an element & `@media`. I also need to l
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Grid Garden](https://codepip.com/games/grid-garden/) - This was a fun game to practice grid fundamentals.
+- [Flexbox Froggy](https://flexboxfroggy.com/) - This was a fun game to practice flexbox fundamentals.
 
 ## Author
 
